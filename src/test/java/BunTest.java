@@ -2,7 +2,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 import praktikum.Bun;
 
@@ -12,7 +11,6 @@ public class BunTest {
     private final String name = "Название";
     private final float price = (float) 10;
 
-    @Mock
     private Bun bun;
 
     @Before

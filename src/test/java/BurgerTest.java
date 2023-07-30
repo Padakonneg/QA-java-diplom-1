@@ -9,6 +9,8 @@ import praktikum.Bun;
 import praktikum.Burger;
 import praktikum.Ingredient;
 
+import java.util.List;
+
 import static org.mockito.Mockito.when;
 import static praktikum.IngredientType.FILLING;
 import static praktikum.IngredientType.SAUCE;
@@ -77,7 +79,7 @@ public class BurgerTest {
         burger.addIngredient(ingredientFilling);
         Assert.assertTrue(burger.ingredients.size() > 0);
         burger.removeIngredient(0);
-        Assert.assertTrue("Ошибка: Не был удалён ингредиент", burger.ingredients.isEmpty());
+        Assert.assertEquals("Ошибка: Не был удалён ингредиент", List.of(), burger.ingredients);
     }
 
     @Test
